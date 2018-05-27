@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VS_FakeBizCard'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'Business card framework'
   s.description      = <<-DESC
 Framework of business card extraction vision skill
@@ -19,10 +19,9 @@ Framework of business card extraction vision skill
   s.source           = { 
     :git => 'https://github.com/michaelchen73092/VS_FakeBizCard.git', 
     :branch => 'master',
-    :tag => "0.2.0"
+    :tag => "0.3.0"
   }
   s.ios.vendored_frameworks = 'VS_FakeBizCard.framework'
   s.ios.deployment_target = '10.0'
-  s.source_files = '**'
-  s.dependency 'FakeVisionSkillsRuntime', '0.5.0'
+  s.dependency 'FakeVisionSkillsRuntime', '0.8.0' 
 end
