@@ -1,0 +1,6 @@
+framework module VS_FakeBizCard {
+  umbrella header "VS_FakeBizCard.h"
+
+  export *
+  module * { export * }
+}

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'VS_FakeBizCard'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of VS_FakeBizCard.'
+  s.summary          = 'Business card framework'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,19 +18,22 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Framework of business card extraction vision skill
                        DESC
 
-  s.homepage         = 'https://github.com/Wei-Chih Chen/VS_FakeBizCard'
+  s.homepage         = 'https://github.com/michaelchen73092/VS_FakeBizCard'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Wei-Chih Chen' => 'weicch@microsoft.com' }
-  s.source           = { :git => 'https://github.com/Wei-Chih Chen/VS_FakeBizCard.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { 
+    :git => 'https://github.com/michaelchen73092/VS_FakeBizCard.git', 
+    :branch => 'master',
+    :tag => "0.1.0"
+  }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'VS_FakeBizCard/Classes/**/*'
+  s.source_files = '**'
   
   # s.resource_bundles = {
   #   'VS_FakeBizCard' => ['VS_FakeBizCard/Assets/*.png']
@@ -38,5 +41,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'FakeVisionSkillsRuntime', '0.3.0'
 end

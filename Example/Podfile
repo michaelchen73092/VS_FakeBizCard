@@ -1,6 +1,0 @@
-use_frameworks!
-target 'VS_FakeBizCard_Tests' do
-  pod 'VS_FakeBizCard', :path => '../'
-  
-  
-end
